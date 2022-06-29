@@ -11,3 +11,4 @@ If you wanna run this app "DemoDatoscout" in your machine, you must run this com
 2. Install requirements: pip install -r requirements.txt
 3. python manage.py makemigrations
 4. python manage.py migrate
+5. python manage.py runserver
