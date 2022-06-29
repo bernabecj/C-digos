@@ -9,6 +9,6 @@ Here is the final result:
 If you wanna run this app "DemoDatoscout" in your machine, you must run this commands:
 1. Create a virtual environment
 2. Install requirements: pip install -r requirements.txt
-For the database:
+And for the database:
 3. python manage.py makemigrations
 4. python manage.py migrate
