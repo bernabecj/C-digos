@@ -1,0 +1,31 @@
+{% extends 'ListItems/layout.html' %}
+
+{% load static %}
+
+<title>{% block title %}Lista{% endblock %}</title>
+
+{% block body %}
+    <div class="container g-3">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Producto</th>
+                <th scope="col"># Ventas (millones)</th>
+                <th scope="col">Crecimiento (%)</th>
+                <th scope="col">Principal destino</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for campo in producto %}
+            <tr>
+                <td scope="font-weight-bold">{{ campo.nombre }}</td>
+                <td>{{ campo.ventas }}</td>
+                <td>{{ campo.crecimiento }}%</td>
+                <td>{{ campo.destino }}</td>
+            
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
