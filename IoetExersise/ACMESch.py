@@ -25,7 +25,6 @@ RENÉ-ASTRID: 3
 
 
 '''
-from unittest import result
 import pytest
 
 class Schedule:
@@ -91,8 +90,6 @@ class Schedule:
         return recurrent, count
 
 
-
-
 def testing():
     schedule = Schedule()
     person = schedule.get_dict_list()
@@ -111,6 +108,7 @@ def testing():
     assert caso1 == 2, "Failed"
     assert caso2 == 3, "Failed"
     assert caso3 == 2, "Failed"
+
 
 if __name__ == '__main__':
     testing()
