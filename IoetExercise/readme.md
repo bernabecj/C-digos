@@ -1,6 +1,6 @@
 # Ioet Exercise - Schedules
 
-## If you wanna run this app "ACMESch.py" in your machine, you must run this commands:
+## If you wanna run this app "ACMESch.py" in your machine, you must run these commands:
 1. pip install pytest
 2. import pytest
 
@@ -18,7 +18,7 @@
 ## Finally, a brief description about the program:
 1. First we have an input with the people's schedule:
 ![](SS/input.jpg)
-2. We are asked to deliver per exit the number of times that two people coincide so, we create a class with all the functions to use:
+2. We are asked to deliver per exit the number of times that two people coincide so, we create a Schedule class with all the functions to use:
 ![](SS/class.jpg)
 3. The "__init___" function is used for initialize the array of arrays from the txt:
 ![](SS/init.jpg)
