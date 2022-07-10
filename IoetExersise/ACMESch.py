@@ -24,9 +24,6 @@ PRODUCCIÓN:
 RENÉ-ASTRID: 3 
 
 
-# Posible solución: https://stackoverflow.com/questions/34425237/algorithm-to-find-meeting-time-slots-where-all-participants-are-available
-
-
 '''
 import pytest
 
