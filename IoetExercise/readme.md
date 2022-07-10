@@ -29,3 +29,4 @@ and the second functions is related to the previews one, and returns all hours w
 ![](SS/coincidence.jpg)
 6. Finally, the test and the final output:
 ![](SS/all.jpg)
+![](SS/salida.jpg)
