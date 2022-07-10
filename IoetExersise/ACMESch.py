@@ -25,6 +25,7 @@ RENÉ-ASTRID: 3
 
 
 '''
+from unittest import result
 import pytest
 
 class Schedule:
@@ -86,13 +87,8 @@ class Schedule:
                     count += 1
             except:
                 pass
-        
-        for i in recurrent:
-            print(i)
 
-        print(f"Teniendo un total de: \033[1;32;40m{count}\033[0m coincidencias.")
-
-        return count
+        return recurrent, count
 
 
 
@@ -101,16 +97,20 @@ def testing():
     schedule = Schedule()
     person = schedule.get_dict_list()
 
-    caso1 = schedule.get_coincidence(person[0], person[1])
-    caso2 = schedule.get_coincidence(person[1], person[2])
-    caso3 = schedule.get_coincidence(person[0], person[2])
+    caso1 = schedule.get_coincidence(person[0], person[1])[1]
+    caso2 = schedule.get_coincidence(person[1], person[2])[1]
+    caso3 = schedule.get_coincidence(person[0], person[2])[1]
 
+    #Ejemplo de salida, en donde se muestran los días, las horas y cuantas veces coinciden dos personas
+    resul = schedule.get_coincidence(person[1], person[2])
+    for i in resul[0]:
+        print(i)
+    print(f"Teniendo un total de: \033[1;32;40m{resul[1]}\033[0m coincidencias.")
 
+    #Pruebas unitarias especificadas en el ejercicio
     assert caso1 == 2, "Failed"
     assert caso2 == 3, "Failed"
     assert caso3 == 2, "Failed"
-
-
 
 if __name__ == '__main__':
     testing()
