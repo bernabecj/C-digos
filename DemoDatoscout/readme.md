@@ -3,8 +3,8 @@ This is a web app in Django, about the best selling products here in Ecuador 202
 I am usig some basic futures from Django, like templating language, routs and sqlite for the database.
 
 Here is the final result:
-![](DemoDatoscout/SS/Inicio.jpg)
-![](DemoDatoscout/SS/List.jpg)
+![](SS/Inicio.jpg)
+![](SS/List.jpg)
 
 If you wanna run this app "DemoDatoscout" in your machine, you must run this commands:
 1. Create a virtual environment
