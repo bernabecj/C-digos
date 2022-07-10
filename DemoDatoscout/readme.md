@@ -1,4 +1,4 @@
-# Codigos
+# Demo Datoscout
 This is a web app in Django, about the best selling products here in Ecuador 2022. 
 I am usig some basic futures from Django, like templating language, routs and sqlite for the database.
 
