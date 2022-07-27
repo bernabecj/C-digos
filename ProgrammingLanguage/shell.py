@@ -8,3 +8,4 @@ while True:
 
     if error: print(error.as_string())
     else: print(result)
+    break
