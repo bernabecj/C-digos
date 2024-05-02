@@ -1,0 +1,8 @@
+Rules:
+Do no repeat the number in the 3 x 3
+Do not repeat the number in the row
+Do no repeat the number in the column
+
+In each 3 x 3 the numbers are from 1 to 9
+
+We will be using a backtracking algorithm with recursion
